@@ -1,4 +1,5 @@
 import { getCookie } from "https://jscroot.github.io/cookie/croot.js";
+import {setInner,getValue} from "https://jscroot.github.io/element/croot.js";
 import generatePassword from "./postfunction.js";
 
 
