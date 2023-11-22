@@ -7,6 +7,6 @@ let token=getCookie("login");
 if (token === ""){
     window.location.replace("../");
 }else{
-    setInner("nama",tokenvalue);
+    setInner("nama",token);
 }
 
