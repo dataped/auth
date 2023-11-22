@@ -1,5 +1,5 @@
 import { getCookie } from "https://jscroot.github.io/cookie/croot.js";
-import PostSignUp from "./postfunction.js";
+import generatePassword from "./postfunction.js";
 
 
 
@@ -7,6 +7,6 @@ let token=getCookie("login");
 if (token === ""){
     window.location.replace("../");
 }else{
-    window.PostSignUp = PostSignUp;
+    generatePassword();
 }
 

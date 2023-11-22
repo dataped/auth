@@ -5,7 +5,18 @@ import { get } from "https://jscroot.github.io/api/croot.js";
 
 let urldevice = "https://api.wa.my.id/api/device/"+getCookie("login");
 
-export default function PostSignUp(){
+export default generatePassword(){
+    setInner("ket","username menggunakan nomoh handphone format 628xxxxx");
+    let tokenvalue = getCookie("login");
+    setInner("judul","Password Anda");
+    setInner("nama",tokenvalue);
+    let gbr=document.getElementById("gambar");
+    let cnv=document.createElement('canvas');
+    updateCanvas("password",cnv);
+    gbr.replaceWith(cnv);
+}
+
+function PostSignUp(){
     const button = document.getElementById('btn');
     button.setAttribute('disabled', '');
     setInner("btn","Loading...");
